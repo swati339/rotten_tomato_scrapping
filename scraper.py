@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import json
 
 def fetch_movie_data(url):
     response = requests.get(url)
@@ -27,12 +28,20 @@ def fetch_movie_data(url):
     }
 
 def main():
-    url = input("Enter the Rotten- movie URL: ")
+    url = input("Enter the Rotten Tomatoes movie URL: ")
     try:
         movie_data = fetch_movie_data(url)
+        
+        # Display movie data
         print("Movie Title:", movie_data['title'])
         print("Movie Score:", movie_data['score'])
         print("Movie Synopsis:", movie_data['synopsis'])
+        
+        # Save movie data to JSON file
+        with open('movie_data.json', 'w', encoding='utf-8') as f:
+            json.dump(movie_data, f, ensure_ascii=False, indent=4)
+        
+        print("Movie data has been saved to movie_data.json")
     except Exception as e:
         print(str(e))
 
