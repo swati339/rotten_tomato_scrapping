@@ -1,0 +1,2 @@
+[console_scripts]
+scrape-rotten-tomatoes = scraper:main
