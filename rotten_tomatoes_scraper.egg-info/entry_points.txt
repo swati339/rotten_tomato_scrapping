@@ -1,2 +1,3 @@
 [console_scripts]
+analyze-movies = analyze:process_movie_data
 scrape-rotten-tomatoes = scraper:main

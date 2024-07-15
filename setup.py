@@ -7,10 +7,12 @@ setup(
     install_requires=[
         'beautifulsoup4',
         'requests',
+        'pytest',  
     ],
     entry_points={
         'console_scripts': [
             'scrape-rotten-tomatoes=scraper:main',
+            'analyze-movies=analyze:process_movie_data',  
         ],
     },
 )

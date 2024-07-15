@@ -5,3 +5,5 @@ rotten_tomatoes_scraper.egg-info/dependency_links.txt
 rotten_tomatoes_scraper.egg-info/entry_points.txt
 rotten_tomatoes_scraper.egg-info/requires.txt
 rotten_tomatoes_scraper.egg-info/top_level.txt
+tests/__init__.py
+tests/test_analyse.py
