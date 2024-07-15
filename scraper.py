@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import re
 
 def fetch_movie_data(url):
     response = requests.get(url)
