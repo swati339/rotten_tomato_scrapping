@@ -1,31 +1,45 @@
+# import json
+
+# with open('all_movies_data.json', 'r', encoding='utf-8') as f:
+#     movie_data_list = json.load(f)
+
+# for movie in movie_data_list:
+#     title = movie['title']
+#     season= title.split('�')[-1].strip()  # Extract season string from title
+
+#     # Check if season_string is not 'N/A'
+#     if season in title:
+#         print(f"Movie: {title}, Seasons: {season}")
+#     else:
+#         print()
+#     #     print(f"Movie: {title}")
 import json
-from collections import defaultdict
+import re
 
-def load_data(filename):
-    """Load data from a JSON file."""
-    with open(filename, 'r', encoding='utf-8') as file:
-        data = json.load(file)
-    return data
+# Load JSON data from file
+with open('all_movies_data.json', 'r', encoding='utf-8') as f:
+    movie_data_list = json.load(f)
 
-def analyze_data(data):
-    """Analyze and print the movie data."""
-    series_seasons = defaultdict(set)
+# Initialize a set to store unique titles
+unique_titles = set()
+
+# Iterate through each movie data
+for movie in movie_data_list:
+    title = movie['title']
     
-    for movie in data:
-        title = movie.get('title', 'N/A')
-        season = movie.get('season', 'N/A')
-        series_seasons[title].add(season)
-    
-    for title, seasons in series_seasons.items():
-        print(f"Series: {title}")
-        print(f"Total Seasons: {len(seasons)}")
-        print(f"Seasons: {', '.join(sorted(seasons))}")
-        print("\n")
-
-def main():
-    filename = 'all_movies_data.json'
-    data = load_data(filename)
-    analyze_data(data)
-
-if __name__ == "__main__":
-    main()
+    # Check if title is already in the set
+    if title not in unique_titles:
+        unique_titles.add(title)
+        
+        # Extract season number from title
+        match = re.search(r'Season\s(\d+)', title)
+        if match:
+            season = match.group(1)
+        else:
+            season = 'N/A'
+        
+        # Print the movie title and season if season is not 'N/A'
+        if season != 'N/A':
+            print(f"Movie: {title}, Season: {season}")
+        else:
+            print(f"Movie: {title}, Seasons: N/A")
