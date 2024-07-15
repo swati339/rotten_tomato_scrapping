@@ -41,7 +41,13 @@ def main():
         'https://www.rottentomatoes.com/m/the_bikeriders',
         'https://www.rottentomatoes.com/tv/star_wars_the_acolyte/s01',
         'https://www.rottentomatoes.com/tv/all_american_homecoming/s03',
-        'https://www.rottentomatoes.com/tv/all_american_homecoming/s03'
+        'https://www.rottentomatoes.com/tv/all_american_homecoming/s03', 
+        'https://www.rottentomatoes.com/m/longlegs',
+        'https://www.rottentomatoes.com/m/the_outwaters',
+        'https://www.rottentomatoes.com/m/the_outwaters',
+        'https://www.rottentomatoes.com/m/the_nature_of_love',
+        'https://www.rottentomatoes.com/m/protocol_7',
+        'https://www.rottentomatoes.com/m/kill_2023_2'
 
         
     ]
