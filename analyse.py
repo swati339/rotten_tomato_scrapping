@@ -1,17 +1,3 @@
-# import json
-
-# with open('all_movies_data.json', 'r', encoding='utf-8') as f:
-#     movie_data_list = json.load(f)
-
-# for movie in movie_data_list:
-#     title = movie['title']
-#     season= title.split('�')[-1].strip()  # Extract season string from title
-
-#     if season in title:
-#         print(f"Movie: {title}, Seasons: {season}")
-#     else:
-#         print()
-#     #     print(f"Movie: {title}")
 import json
 import re
 
