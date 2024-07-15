@@ -17,8 +17,8 @@ for movie in movie_data_list:
         season = match.group(1)
         series_name = match.group(2)
     else:
-        season = 'N/A'
-        series_name = title
+        season = None
+        series_name = None
     
     structured_data.append({
         'title': title,
