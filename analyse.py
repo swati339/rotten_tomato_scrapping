@@ -51,34 +51,27 @@ for series, seasons in unique_series.items():
 
 structured_data = []
 
-for series, seasons in unique_series.items():
-    if seasons:
-        seasons_list = sorted(seasons, key=lambda x: int(x))  # Sort seasons numerically
-        structured_data.append({
-            "series": series,
-            "seasons": seasons_list,
-            "movies": [
-                {
-                    "title": movie['title'],
-                    "score": movie['score'],
-                    "synopsis": movie['synopsis']
-                }
-                for movie in movie_data_list if movie['title'] == series
-            ]
-        })
+for movie in movie_data_list:
+    title = movie['title']
+    score = movie['score']
+    synopsis = movie['synopsis']
+    
+    match = re.search(r'Season\s(\d+)\s–\s(.+)', title)
+    if match:
+        season = match.group(1)
+        series_name = match.group(2)
     else:
-        structured_data.append({
-            "series": series,
-            "seasons": "N/A",
-            "movies": [
-                {
-                    "title": movie['title'],
-                    "score": movie['score'],
-                    "synopsis": movie['synopsis']
-                }
-                for movie in movie_data_list if movie['title'] == series
-            ]
-        })
+        season = 'N/A'
+        series_name = title
+    
+    structured_data.append({
+        'title': title,
+        'season': season,
+        'series': series_name,
+        'score': score,
+        'synopsis': synopsis
+    })
+
 
 
 with open('series_seasons_data.json', 'w', encoding='utf-8') as f:
