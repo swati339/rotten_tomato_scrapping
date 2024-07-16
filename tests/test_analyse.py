@@ -86,7 +86,7 @@ def test_process_movie_data():
     assert all('synopsis' in item for item in output_data)
 
     non_null_season_series_count = sum(
-        1 for item in output_data if item['season'] != 'N/A' and item['series'] != 'N/A'
+        1 for item in output_data if item['season'] != None and item['series'] != None
     )
     assert non_null_season_series_count >= len(output_data) // 2
 

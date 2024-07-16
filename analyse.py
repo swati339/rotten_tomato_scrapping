@@ -7,8 +7,8 @@ def parse_series_and_season(title):
         season = match.group(1)
         series_name = match.group(2)
     else:
-        season = 'N/A'
-        series_name = title
+        season = None
+        series_name = None
     return season, series_name
 
 def process_movie_data(input_file, output_file):
@@ -20,8 +20,8 @@ def process_movie_data(input_file, output_file):
     
     for movie in movie_data_list:
         title = movie['title']
-        score = movie.get('score', 'N/A')
-        synopsis = movie.get('synopsis', 'N/A')
+        score = movie.get('score', None)
+        synopsis = movie.get('synopsis', None)
         
         season, series_name = parse_series_and_season(title)
         
