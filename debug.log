@@ -1,0 +1,35 @@
+2024-07-16 16:58:19,590 - __main__ - DEBUG - This is a debug message
+2024-07-16 16:58:19,591 - __main__ - INFO - This is an info message
+2024-07-16 16:58:19,591 - __main__ - WARNING - This is a warning message
+2024-07-16 16:58:19,592 - __main__ - ERROR - This is an error message
+2024-07-16 16:58:19,592 - __main__ - CRITICAL - This is a critical message
+2024-07-16 16:59:24,277 - __main__ - DEBUG - This is a debug message
+2024-07-16 16:59:24,277 - __main__ - INFO - This is an info message
+2024-07-16 16:59:24,277 - __main__ - WARNING - This is a warning message
+2024-07-16 16:59:24,278 - __main__ - ERROR - This is an error message
+2024-07-16 16:59:24,279 - __main__ - CRITICAL - This is a critical message
+2024-07-16 16:59:24,279 - __main__ - DEBUG - Trying to divide 10 by 2
+2024-07-16 16:59:24,279 - __main__ - INFO - Result of division: 5.0
+2024-07-16 16:59:24,279 - __main__ - DEBUG - Trying to divide 10 by 0
+2024-07-16 16:59:24,279 - __main__ - ERROR - Attempted to divide by zero.
+2024-07-16 16:59:24,279 - __main__ - ERROR - Exception occurred: 
+Traceback (most recent call last):
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\logfile.py", line 16, in divide
+    result = a / b
+             ~~^~~
+ZeroDivisionError: division by zero
+2024-07-16 16:59:40,209 - __main__ - DEBUG - This is a debug message
+2024-07-16 16:59:40,210 - __main__ - INFO - This is an info message
+2024-07-16 16:59:40,210 - __main__ - WARNING - This is a warning message
+2024-07-16 16:59:40,210 - __main__ - ERROR - This is an error message
+2024-07-16 16:59:40,210 - __main__ - CRITICAL - This is a critical message
+2024-07-16 16:59:40,210 - __main__ - DEBUG - Trying to divide 10 by 2
+2024-07-16 16:59:40,210 - __main__ - INFO - Result of division: 5.0
+2024-07-16 16:59:40,210 - __main__ - DEBUG - Trying to divide 10 by 0
+2024-07-16 16:59:40,210 - __main__ - ERROR - Attempted to divide by zero.
+2024-07-16 16:59:40,210 - __main__ - ERROR - Exception occurred: 
+Traceback (most recent call last):
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\logfile.py", line 16, in divide
+    result = (a / b)
+              ~~^~~
+ZeroDivisionError: division by zero

@@ -1,0 +1,6 @@
+2024-07-16 16:23:13,409::INFO::Hello World!!!
+2024-07-16 16:23:13,409::CRITICAL::This is critical
+2024-07-16 16:35:21,189::INFO::Hello World!!!
+2024-07-16 16:35:21,190::CRITICAL::This is critical
+2024-07-16 16:35:21,190::ERROR::This is error
+2024-07-16 16:35:21,190::WARNING::This is warning
