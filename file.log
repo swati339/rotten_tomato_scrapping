@@ -1,0 +1,93 @@
+2024-07-17T09:01:25.193673+0545 INFO This is a new info message
+2024-07-17T09:03:36.100359+0545 INFO This is a new info message
+2024-07-17T09:03:36.147181+0545 INFO This is an asynchronously logged message
+2024-07-17 09:03:36.147 | INFO     | __main__:<module>:20 - This is an asynchronously logged message
+2024-07-17T09:04:54.148809+0545 INFO This is a new info message
+2024-07-17T09:04:54.159229+0545 INFO This is an asynchronously logged message
+2024-07-17 09:04:54.159 | INFO     | __main__:<module>:20 - This is an asynchronously logged message
+2024-07-17T09:04:54.160654+0545 ERROR An error has been caught in function '<module>', process 'MainProcess' (1068), thread 'MainThread' (42652):
+Traceback (most recent call last):
+
+> File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 28, in <module>
+    divide(10,0)
+    └ <function divide at 0x00000270001D71A0>
+
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 26, in divide
+    return a / b
+           │   └ 0
+           └ 10
+
+ZeroDivisionError: division by zero
+2024-07-17 09:04:54.160 | ERROR    | __main__:<module>:28 - An error has been caught in function '<module>', process 'MainProcess' (1068), thread 'MainThread' (42652):
+Traceback (most recent call last):
+
+> File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 28, in <module>
+    divide(10,0)
+    └ <function divide at 0x00000270001D71A0>
+
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 26, in divide
+    return a / b
+           │   └ 0
+           └ 10
+
+ZeroDivisionError: division by zero
+2024-07-17T09:06:18.937767+0545 INFO This is a new info message
+2024-07-17T09:06:18.946768+0545 INFO This is an asynchronously logged message
+2024-07-17 09:06:18.946 | INFO     | __main__:<module>:20 - This is an asynchronously logged message
+2024-07-17T09:06:18.947747+0545 ERROR An error has been caught in function '<module>', process 'MainProcess' (18016), thread 'MainThread' (25832):
+Traceback (most recent call last):
+
+> File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 28, in <module>
+    divide(10,0)
+    └ <function divide at 0x00000252988171A0>
+
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 26, in divide
+    return a / b
+           │   └ 0
+           └ 10
+
+ZeroDivisionError: division by zero
+2024-07-17 09:06:18.947 | ERROR    | __main__:<module>:28 - An error has been caught in function '<module>', process 'MainProcess' (18016), thread 'MainThread' (25832):
+Traceback (most recent call last):
+
+> File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 28, in <module>
+    divide(10,0)
+    └ <function divide at 0x00000252988171A0>
+
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 26, in divide
+    return a / b
+           │   └ 0
+           └ 10
+
+ZeroDivisionError: division by zero
+2024-07-17T09:07:33.161046+0545 INFO This is a new info message
+2024-07-17T09:07:33.169648+0545 INFO This is an asynchronously logged message
+2024-07-17 09:07:33.169 | INFO     | __main__:<module>:20 - This is an asynchronously logged message
+2024-07-17T09:07:33.169648+0545 ERROR An error has been caught in function '<module>', process 'MainProcess' (42688), thread 'MainThread' (21136):
+Traceback (most recent call last):
+
+> File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 28, in <module>
+    divide(10,0)
+    └ <function divide at 0x000001DAB07971A0>
+
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 26, in divide
+    return a / b
+           │   └ 0
+           └ 10
+
+ZeroDivisionError: division by zero
+2024-07-17 09:07:33.169 | ERROR    | __main__:<module>:28 - An error has been caught in function '<module>', process 'MainProcess' (42688), thread 'MainThread' (21136):
+Traceback (most recent call last):
+
+> File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 28, in <module>
+    divide(10,0)
+    └ <function divide at 0x000001DAB07971A0>
+
+  File "c:\Users\Dell Inspiron 7306\OneDrive\Desktop\Logging\loglib.py", line 26, in divide
+    return a / b
+           │   └ 0
+           └ 10
+
+ZeroDivisionError: division by zero
+2024-07-17T09:07:33.177239+0545 INFO This will be logged to new_file.log
+2024-07-17 09:07:33.177 | INFO     | __main__:<module>:37 - This will be logged to new_file.log
